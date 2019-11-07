@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const server = require('./api/server.js');
 
-const port = process.env.port;
+const port = process.env.port || 5000;
 
 server.get('/', async (req, res) => {
   try {
